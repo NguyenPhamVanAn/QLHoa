@@ -1,0 +1,30 @@
+﻿@model book.Models.Book
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+
+
+<div>
+    <p class="h3">@Model.Name</p>  
+    <hr/>
+    <dl class="row">
+        <dt class = "col-sm-2"><lable asp-for="Name"></lable></dt>
+        <dd class="col-sm-10">@Model.Name</dd>
+        <dt class="col-sm-2"><lable asp-for="Authours"></lable></dt>
+        <dd class="col-sm-10">@Model.Authors</dd>
+        <dt class="col-sm-2"><lable asp-for="Publisher"></lable></dt>
+        <dd class="col-sm-10">@Model.Publisher</dd>
+        <dt class="col-sm-2"><lable asp-for="Year"></lable></dt>
+        <dd class="col-sm-10">@Model.Year</dd>
+        <dt class="col-sm-2"><lable asp-for="DataFile"></lable></dt>
+        <dd class="col-sm-10">@Model.DataFile</dd>
+        <dt class="col-sm-2"><lable asp-for="Description"></lable></dt>
+        <dd class="col-sm-10">@Model.Description</dd>
+       </dl>
+</div>
+<hr/>
+<div>
+  <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Back to list</a>
+</div>
