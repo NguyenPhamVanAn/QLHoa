@@ -17,7 +17,7 @@
                     <br />
                     <%# Eval("TenHoa") %><br/>
                     Giá bán: <span class="price"><%# Eval("Gia","{0:#,##0} VNĐ") %></span><br/>
-                    <asp:Button ID="btnAddToCard" runat="server" Text="Add To Card." class="btn btn-success"/>
+                    <asp:Button ID="btnAddToCard" runat="server" Text="Add To Card" class="btn btn-success"/>
                 </div>
             </ItemTemplate>
         </asp:Repeater>
